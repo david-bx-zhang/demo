@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Event details</h1>
+  Event 
+  <p> {{event}} </p>
+  Client
+  <p> {{client}} </p>
+  Venue 
+  <p> {{venue}} </p>
+  Supplies 
+  {% for supply in usedsupplies  %}
+  <li>{{supply}}</li>
+  {% endfor %}
+
+
+</div>
+{% endblock %}

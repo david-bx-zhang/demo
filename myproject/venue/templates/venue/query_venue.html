@@ -1,0 +1,20 @@
+
+{% extends "query_base.html" %}
+{% block content %}
+<div class="jumbotron">
+  
+  <p>Query venue with the form below:</p>
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      {{ form.id.label }} {{ form.id() }} 
+      {{ form.name.label }} {{ form.name() }} 
+      {{ form.type.label }}  {{ form.type() }} 
+      {{ form.location.label }} {{ form.location() }} 
+      {{ form.price.label }} {{ form.price() }} 
+      {{ form.contact.label }}  {{ form.contact() }} 
+      {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}
+

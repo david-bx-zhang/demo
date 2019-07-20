@@ -1,0 +1,12 @@
+{% extends "base_venue.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all available venues</h1>
+  <ul>
+    {% for venue in venues  %}
+    <li>{{venue}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}

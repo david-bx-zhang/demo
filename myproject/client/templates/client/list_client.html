@@ -1,0 +1,12 @@
+{% extends "base_client.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all available clients. !!!</h1>
+  <ul>
+    {% for client in clients  %}
+    <li>{{client}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}

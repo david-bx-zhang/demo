@@ -1,0 +1,12 @@
+{% extends "base_supply.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all available supplies.</h1>
+  <ul>
+    {% for supply in supplies  %}
+    <li>{{supply}}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}

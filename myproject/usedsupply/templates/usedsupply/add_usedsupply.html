@@ -1,0 +1,17 @@
+
+{% extends "base_usedsupply.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Have a puppy that needs to be adopted?</h1>
+  <p>Add a new puppy with the form below:</p>
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      {{ form.supply_id.label }} {{ form.supply_id() }} 
+      {{ form.event_id.label }} {{ form.event_id() }} 
+      {{ form.quantity.label }} {{ form.quantity() }} 
+      {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}
+

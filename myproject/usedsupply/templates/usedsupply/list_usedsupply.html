@@ -1,0 +1,12 @@
+{% extends "base_usedsupply.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of all used supply </h1>
+  <ul>
+    {% for usedsupply in usedsupplies  %}
+    <li>{{ usedsupply }}</li>
+    {% endfor %}
+  </ul>
+
+</div>
+{% endblock %}
